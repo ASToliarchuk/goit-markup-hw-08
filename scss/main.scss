@@ -1,9 +1,7 @@
-@import "./utils/variables.scss";
-@import "./utils/base.scss";
-@import "./utils/hidden.scss";
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/hidden";
 @import "./utils/placeholders";
-
-@import "./layouts.scss/container.scss";
 
 @import "./components/buttons";
 @import "./components/backdrop";
@@ -21,6 +19,8 @@
 @import "./components/section-work";
 @import "./components/section-client";
 @import "./components/team-section";
+
+@import "./layouts/container;
 
 
 
