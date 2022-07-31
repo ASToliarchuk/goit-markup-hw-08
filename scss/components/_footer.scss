@@ -1,0 +1,125 @@
+footer {
+    display: flex;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-blok {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-footer {
+    font-family: "Raleway";
+    font-style: 400;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.img-logo-footer {
+    font-family: "Raleway";
+    font-style: 400;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.address {
+    width: 231px;
+    height: 81px;
+    margin-right: 70px;
+}
+
+.address .text-address {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+}
+
+.address .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.address .link-tel {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
+.title-icon {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+}
+
+.items-icon {
+    margin-right: 10px;
+}
+
+.link-social {
+@extend %flex-centered;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-social:hover,
+.link-social:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}

@@ -1,0 +1,53 @@
+.section-client {
+    text-align: center;
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.company {
+    @extend %flex-centered;
+}
+
+.card {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+.company li:last-child {
+    margin-right: 0%;
+}
+
+.client-icons {
+    @extend %flex-centered;
+    
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-icons:hover {
+    border-color: #2196F3;
+}
+
+.client-icons:hover .client-icon {
+    fill: #2196F3;
+}
+
+.client-icons:focus .client-icon {
+    fill: #2196F3;
+}
+
+.client-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--accent-color);
+}

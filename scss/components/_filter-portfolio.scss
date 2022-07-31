@@ -1,0 +1,12 @@
+.filter-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+@extend %flex-centered;
+}
+
+.button-list li {
+    margin-right: 8px;
+}
