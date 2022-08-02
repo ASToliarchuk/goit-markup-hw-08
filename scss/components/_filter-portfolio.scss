@@ -3,10 +3,17 @@
     padding-bottom: 94px;
 }
 
-.button-list {
-@extend %flex-centered;
+.button-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+
 }
 
-.button-list li {
-    margin-right: 8px;
+.portfolio-btn{
+    margin-bottom: 15px;
+    margin-left: 8px;
 }
+
+

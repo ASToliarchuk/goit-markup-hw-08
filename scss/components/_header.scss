@@ -1,8 +1,9 @@
 .header {
+        height: 80px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(236, 236, 236);
-    height: 60px;
+
 
     &__inner {
             display: flex;
@@ -13,9 +14,9 @@
 }
 }
 
-.navigation {
-    @include align-list;
-}
+// .navigation {
+//     @include align-list;
+// }
 
 
 

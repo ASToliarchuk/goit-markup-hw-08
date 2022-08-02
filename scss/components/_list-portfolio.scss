@@ -6,9 +6,19 @@
 .list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-}
+    // justify-content: start;
+    margin-bottom: 40px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+    }
+
 
 .box-overlay {
     overflow: hidden;
@@ -44,11 +54,21 @@
 }
 
 .item-portfolio {
+    display: block;
     min-width: 370px;
     flex-basis: calc(33.3333333333% - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
+    margin-left: 30px;
+
+        @include tab {
+            margin-left: 30px;
+            width: calc(100% / 2 - 30px);
+        }
+    
+        @include desk {
+            width: calc(100% / 3 - 30px);
+        }
+    }
+
 
 .border-foto {
     border: 1px solid rgb(238, 238, 238);
