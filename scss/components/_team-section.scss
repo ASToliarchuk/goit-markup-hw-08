@@ -5,17 +5,53 @@
     padding-top: 94px;
 }
 
-.section-title {
-    margin-bottom: 50px;
-}
+.section-title-team {
+    // margin-bottom: 50px;
+    color: #212121;
+    @include font(28px, null, 1.18, null);
+        text-align: center;
+        margin-bottom: 30px;
+    
+        @include desk {
+            margin-bottom: 50px;
+            @include font(36px, null, 1.17, null);
+        }
+    }
 
 .team-list {
-    display: flex;
-}
+    // display: flex;
+    margin-bottom: -30px;
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+        }
+    }
+
 
 .title-team {
-    margin-right: 30px;
-}
+    margin-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    
+        @include tab {
+            margin-left: 30px;
+            width: calc(100% / 2 - 30px);
+        }
+    
+        @include desk {
+            width: calc(100% / 4 - 30px);
+        }
+    }
+
+    .title{
+        @include font(16px, 500, 1.19, null);
+            margin-bottom: 10px;
+        }
+    
+
 
 .title-team:last-child {
     margin-right: 0%;
@@ -26,11 +62,12 @@
 }
 
 .card-bg {
-    background-color: #FFFFFF;
-    width: 270px;
-    height: 168px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 0px 0px 4px 4px;
+    }
+
 
 .team-link {
     margin: 16px 32px 30px 32px;
@@ -40,11 +77,7 @@
 
 .social-list {
     display: flex;
-    list-style: none;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 16px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .link-area {
@@ -55,6 +88,13 @@
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.team-text{
+    @include font(16px, 400, 1.19, null);
+        color: #757575;
+        margin-bottom: 16px;
+    }
+
 
 .link-area:hover .social-links {
     fill: #FFFFFF;
@@ -84,10 +124,4 @@
     letter-spacing: 0.03em;
 }
 
-.team-list .team-text {
-    font-family: "Roboto";
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-}
 
