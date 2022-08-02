@@ -778,7 +778,8 @@ footer {
 .hero {
   display: flex;
   align-items: center;
-  height: 400px;
+  max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;

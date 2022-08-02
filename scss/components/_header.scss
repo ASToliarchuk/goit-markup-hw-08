@@ -2,9 +2,20 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(236, 236, 236);
+    height: 60px;
 
     &__inner {
             display: flex;
 }
 
+@include tab {
+    height: 80px;
 }
+}
+
+.navigation {
+    @include align-list;
+}
+
+
+
