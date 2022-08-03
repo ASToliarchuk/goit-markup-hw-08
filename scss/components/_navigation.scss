@@ -1,9 +1,14 @@
 
 /* Навігація сайту */
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+    @include tab {
+            display: flex;
+        }
+                // padding-top: 32px;
+                // padding-bottom: 32px;
+    // align-items: center;
+    // justify-content: center;
 
     &__logo {
         color: #000000;
@@ -13,16 +18,14 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-decoration: none;
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 
     &__img {
         color: var(--accent-color);
     }
 }
-
-
-
-
 
 /* Навігація сайту */
 .navigation__site {
@@ -88,11 +91,8 @@
 
 /* navigation__auth */
 
-.navigation__auth {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
+
+
 
 .navigation__auth li {
     margin-right: 50px;

@@ -1004,9 +1004,12 @@ footer {
 
 /* Навігація сайту */
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
 }
 .navigation__logo {
   color: #000000;
@@ -1016,6 +1019,8 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .navigation__img {
   color: var(--accent-color);
@@ -1085,9 +1090,24 @@ footer {
 
 /* navigation__auth */
 .navigation__auth {
-  margin-left: auto;
-  display: flex;
+  display: none;
   align-items: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__auth {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__auth {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+  }
 }
 
 .navigation__auth li {
