@@ -1,16 +1,35 @@
 
 /* Навігація сайту */
-.navigation__site {
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    display: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-        // @include tab {
-        //     display: flex;
-        // }
+    &__logo {
+        color: #000000;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
     }
 
+    &__img {
+        color: var(--accent-color);
+    }
+}
+
+
+
+
+
+/* Навігація сайту */
+.navigation__site {
+    margin-left: 93px;
+    display: flex;
+    align-items: center;
+}
 
 .navigation__site li {
     margin-right: 50px;
@@ -70,16 +89,10 @@
 /* navigation__auth */
 
 .navigation__auth {
-    display: none;
-    
-        @include tab {
-            display: flex;
-        }
-    
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
 
 .navigation__auth li {
     margin-right: 50px;
@@ -151,24 +164,4 @@
 .navigation__icon-mail:hover,
 .navigation__icon-mail:focus {
     fill: var(--accent-color);
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &__logo {
-        color: #000000;
-        font-family: Raleway;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-    }
-
-    &__img {
-        color: var(--accent-color);
-    }
 }

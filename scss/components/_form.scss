@@ -6,15 +6,6 @@
     padding: 0;
 }
 
-.form-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: rgb(33, 33, 33);
-    margin-bottom: 12px;
-}
-
 .form-group-field {
     width: 100%;
     font-size: 16px;
@@ -102,13 +93,16 @@ textarea {
     font-style: normal;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
     padding-left: 24px;
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
-
 
 
 .form-agreement-link {
@@ -116,7 +110,7 @@ textarea {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     -webkit-text-decoration-line: underline;

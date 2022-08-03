@@ -1,16 +1,53 @@
 .modal {
     @extend %absolutely-centered;
 
-    padding: 40px;
-    min-height: 581px;
-    min-width: 528px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
+        width: 100%;
+        min-height: 581px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0) scale(1);
+        transition: transform 250ms;
+        padding: 40px;
+    
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+        }
+    }
+
 
 .icon-close {
     @extend %flex-centered;
     
     fill: currentColor;
 }
+
+.form-title {
+    @include font(20px, 700, 1.15, null);
+
+    @media screen and (min-width: 1200px) {
+        @include font(20px, 700, 1.5, null);
+    }
+
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(33, 33, 33);
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    justify-content: center;
+    color: #757575;
+}
+

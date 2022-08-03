@@ -1,22 +1,10 @@
 .header {
-        height: 80px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(236, 236, 236);
 
-
-    &__inner {
-            display: flex;
 }
 
-@include tab {
-    height: 80px;
+.header__inner{
+display: flex;
 }
-}
-
-// .navigation {
-//     @include align-list;
-// }
-
-
-
