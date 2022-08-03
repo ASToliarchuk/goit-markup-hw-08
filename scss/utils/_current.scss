@@ -1,0 +1,22 @@
+.current {
+    color: #2196f3;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background-color: #2196f3;
+        left: 0;
+        bottom: -32px;
+    }
+}
+
+.header-nav__link.current {
+    color: #2196f3;
+}
+
+.mob-menu-nav__link.current-mob {
+    color: #2196f3;
+}

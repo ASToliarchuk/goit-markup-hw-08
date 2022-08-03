@@ -4,7 +4,10 @@
 @import "./utils/hidden";
 @import "./utils/placeholders";
 @import "./utils/mixins";
+@import "./utils/current";
 
+@import "./components/header";
+@import "./components/navigation";
 @import "./components/buttons";
 @import "./components/backdrop";
 @import "./components/filter-portfolio";
@@ -12,11 +15,9 @@
 @import "./components/form";
 @import "./components/footer";
 @import "./components/footer-right-block";
-@import "./components/header";
 @import "./components/hero";
 @import "./components/list-portfolio";
 @import "./components/modal";
-@import "./components/navigation";
 @import "./components/section";
 @import "./components/section-work";
 @import "./components/section-client";
