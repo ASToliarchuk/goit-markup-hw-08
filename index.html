@@ -147,21 +147,36 @@
                     <li class="exampl-foto">
 
                         <div class="description-work">
-                            <img src="./images/box1.jpg" alt="example" width="370" height="294">
+                            <img srcset="./images/computer.jpg 1x,
+                            ./images/computer-2x.jpg 2x" 
+                            src="./images/computer.jpg" 
+                            alt="работа за компом" 
+                            width="370"
+                            height="294">
                             <p class="work-description">Десктопные приложения</p>
                         </div>
                     </li>
 
                     <li class="exampl-foto">
                         <div class="description-work">
-                            <img src="./images/box2.jpg" alt="example" width="370" height="294">
+                            <img srcset="./images/phone.jpg 1x, 
+                            ./images/phone-2x.jpg 2x" 
+                            src="./images/phone.jpg" 
+                            alt="Работа через телефон" 
+                            width="370"
+                            height="294">
                             <p class="work-description">Мобильные приложения</p>
                         </div>
                     </li>
 
                     <li class="exampl-foto">
                         <div class="description-work">
-                            <img src="./images/box3.jpg" alt="example" width="370" height="294">
+                            <img srcset="./images/laptop.jpg 1x, 
+                            ./images/laptop-2x.jpg 2x" 
+                            src="./images/laptop.jpg" 
+                            alt="работа на планшете" 
+                            width="370"
+                            height="294">
                             <p class="work-description">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -178,8 +193,16 @@
             <div class="container">
                 <h2 class="section-title-team">Наша команда</h2>
                 <ul class="team-list">
-                    <li class="title-team"><img class="team-foto" src="./images/img1.jpg" alt="член команди" width="270"
-                            height="260">
+                    <li class="title-team">
+                        <picture>
+                            <source srcset="./images/igor.jpg 1x,
+                                                ./images/igor-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/igor-tab.jpg 1x,
+                                                ./images/igor-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/igor-mob.jpg 1x,
+                                                ./images/igor-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/igor.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <div class="card-bg">
 
                             <div class="box-team">
@@ -209,8 +232,16 @@
                         </div>
                     </li>
 
-                    <li class="title-team"><img class="team-foto" src="./images/img2.jpg" alt="член команди" width="270"
-                            height="260">
+                    <li class="title-team">
+                        <picture>
+                            <source srcset="./images/olga.jpg 1x,
+                                                                    ./images/olga-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/olga-tab.jpg 1x,
+                                                                    ./images/olga-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/olga-mob.jpg 1x,
+                                                                    ./images/olga-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/olga.jpg" alt="Ольга Репина" />
+                        </picture>
                         <div class="card-bg">
 
                             <div class="box-team">
@@ -239,8 +270,16 @@
                         </div>
                     </li>
 
-                    <li class="title-team"><img class="team-foto" src="./images/img3.jpg" alt="член команди" width="270"
-                            height="260">
+                    <li class="title-team">
+                        <picture>
+                            <source srcset="./images/nikolai.jpg 1x,
+                                                                    ./images/nikolai-2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/nikolai-tab.jpg 1x,
+                                                                    ./images/nikolai-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/nikolai-mob.jpg 1x,
+                                                                    ./images/nikolai-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/nikolai.jpg" alt="Николай Тарасов" />
+                        </picture>
                         <div class="card-bg">
 
                             <div class="box-team">
@@ -269,8 +308,16 @@
                         </div>
                     </li>
 
-                    <li class="title-team"><img class="team-foto" src="./images/img4.jpg" alt="член команди" width="270"
-                            height="260">
+                    <li class="title-team">
+                    <picture>
+                        <source srcset="./images/mihail.jpg 1x,
+                                            ./images/mihail-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/mihail-tab.jpg 1x,
+                                            ./images/mihail-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mihail-mob.jpg 1x,
+                                            ./images/mihail-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/mihail.jpg" alt="Михаил Ермаков" />
+                    </picture>
                         <div class="card-bg">
                             <div class="box-team">
                                 <h3 class="title">Михаил Ермаков</h3>
