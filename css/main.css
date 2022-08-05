@@ -656,7 +656,6 @@ button {
 }
 
 .feature-list {
-  margin-bottom: -30px;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
@@ -664,7 +663,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
   }
 }
 
