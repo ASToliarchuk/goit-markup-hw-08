@@ -607,13 +607,9 @@ button {
   }
 }
 
-.portfolio-btn:not(:last-child) {
-  margin-right: 8px;
-}
-
 .portfolio-btn {
-  margin-bottom: 15px;
   margin-left: 8px;
+  margin-top: 15px;
 }
 
 .item-portfolio {
@@ -627,14 +623,14 @@ button {
   .item-portfolio {
     margin-left: 30px;
     margin-top: 30px;
-    width: calc(33.3333333333% - 30px);
+    width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .item-portfolio {
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc(33.3333333333% - 30px);
+    width: calc(33.3333333333% - 30px);
   }
 }
 .item-portfolio:hover, .item-portfolio:focus {

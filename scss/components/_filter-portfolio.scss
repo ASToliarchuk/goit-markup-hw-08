@@ -9,7 +9,6 @@
 }
 
 .list-portfolio {
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -29,8 +28,7 @@
          width: 100%;
         justify-content: center;
         margin-top: 0;
-        margin-left: 0;
-            
+        margin-left: 0;    
         }
     
         @media screen and (min-width: 1200px) {
@@ -38,29 +36,30 @@
         }
     }
 
-.portfolio-btn:not(:last-child) {
-    margin-right: 8px;
-}
+
 
 .portfolio-btn{
-    margin-bottom: 15px;
     margin-left: 8px;
+    margin-top: 15px;
+
 }
+
+
 
     .item-portfolio{
         display: block;
-        // margin-bottom: 30px;
+   
         
             @include tab {
     margin-left: 30px;
     margin-top: 30px;
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
             }
         
             @include desk {
                 margin-left: 30px;
                 margin-top: 30px;
-                flex-basis: calc(33.3333333333% - 30px);
+                width: calc(100% / 3 - 30px);
             }
         
             box-shadow: none;
