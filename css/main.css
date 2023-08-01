@@ -668,18 +668,25 @@ button {
 
 .feature-item {
   height: auto;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .feature-item {
+    margin-bottom: 30px;
     margin-left: 30px;
     width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .feature-item {
+    margin-bottom: 0px;
     margin-left: 30px;
     width: calc(25% - 30px);
   }
+}
+
+.feature-list :last-child {
+  margin-bottom: 0;
 }
 
 .feature-list .title {
