@@ -27,6 +27,7 @@ ul {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -672,7 +673,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .feature-item {
-    margin-bottom: 30px;
     margin-left: 30px;
     width: calc(50% - 30px);
   }
